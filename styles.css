@@ -48,9 +48,9 @@ p {
 
 .gallery-item img {
     width: 100%;
-    height: auto;
-    border: none; /* Remove border */
-    padding: 0;   /* Remove any padding */
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-bottom: 3px solid #ddd;
 }
 
 .gallery-item .overlay {
