@@ -67,9 +67,31 @@
 </head>
 <body>
 
+<!-- Home Button -->
+
     <div class="button-container">
-        <button onclick="window.location.href='index.html'">Back to Home</button>
-    </div>
+    <button onclick="window.location.href='index.html'">Back to Home</button>
+</div>
+
+<style>
+    .button-container button {
+        font-size: 20px; /* Increase font size */
+        padding: 15px 30px; /* Add padding for bigger button */
+        background-color: #4CAF50; /* Green background */
+        color: white; /* White text color */
+        border: none; /* Remove border */
+        border-radius: 10px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+        transition: background-color 0.3s, transform 0.3s; /* Smooth transition on hover */
+    }
+
+    .button-container button:hover {
+        background-color: #45a049; /* Darker green on hover */
+        transform: scale(1.1); /* Slightly enlarge button on hover */
+    }
+</style>
+
 
     <!-- First Box -->
     <div class="container">
