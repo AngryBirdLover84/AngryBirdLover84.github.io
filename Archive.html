@@ -1,1 +1,72 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Archive Template</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 200px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            height: 100vh;
+        }
+        header {
+            grid-area: header;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            grid-area: sidebar;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-right: 1px solid #ddd;
+        }
+        main {
+            grid-area: main;
+            padding: 20px;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .placeholder {
+            border: 2px dashed #ccc;
+            text-align: center;
+            padding: 20px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+        <p>Place your site title or logo here.</p>
+    </header>
+    <nav>
+        <h2>Sidebar</h2>
+        <p>Use this for navigation links.</p>
+    </nav>
+    <main>
+        <h2>Main Content</h2>
+        <div class="placeholder">
+            <p>Place your images and descriptions here.</p>
+        </div>
+    </main>
+    <footer>
+        <p>Footer</p>
+        <p>Place copyright or other info here.</p>
+    </footer>
+</body>
+</html>
